@@ -1,0 +1,61 @@
+/* Sidebar container */
+.sidebar {
+    background-color: #000000; /* Cor de fundo do sidebar */
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+/* Sidebar menu items */
+.sidebar-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-item {
+    margin-bottom: 20px;
+}
+
+/* Nav Link */
+.nav-link {
+    color: #ffffff; /* Cor do texto */
+    text-decoration: none;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Ícones dentro do link */
+.nav-link i {
+    margin-right: 10px;
+}
+
+/* Hover effect */
+.nav-link:hover {
+    background-color: #495057; /* Cor de hover */
+}
+
+/* Classe para item ativo */
+.nav-link.active {
+    background-color: #007bff; /* Cor do fundo do item ativo */
+    color: #ffffff !important; /* Garantir que o texto seja branco mesmo quando ativo */
+}
+
+/* Responsivo para tamanhos menores */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 200px;
+    }
+
+    .nav-link span {
+        font-size: 0.9rem;
+    }
+}
